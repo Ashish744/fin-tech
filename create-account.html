@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<script>try{var p=location.pathname.split('/').pop();if(sessionStorage.getItem('pt')&&p!==''&&p!=='index.html'&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-in');sessionStorage.removeItem('pt')}catch(e){}</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Create account — Fintech Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/motion.css">
+  </head>
+  <body data-page="create-account">
+    <div class="auth">
+      <aside>
+        <a class="logo" href="index.html" style="color:#fff"><img src="assets/logo/logo.webp" alt="Stackly" width="173" height="50"></a>
+        <div>
+          <h2>Open your account in three minutes.</h2>
+          <p style="opacity:.75;margin-top:1rem;max-width:34ch">No fees to start. Cancel anytime.</p>
+        </div>
+        <div class="auth-visual">
+          <img src="assets/images/home2.webp" alt="Financial charts on a tablet">
+        </div>
+        <small style="opacity:.6">© 2026 Fintech Platform</small>
+      </aside>
+      <main>
+        <form data-validate data-success="Account created. Redirecting…" data-redirect="public-dashboard.html" aria-labelledby="t">
+          <a class="back-home" href="login.html">Back to login</a>
+          <h1 id="t" style="font-size:2.2rem">Create account</h1>
+          <div class="fd">
+            <label for="fn">First name</label>
+            <input id="fn" type="text" data-v="name" autocomplete="given-name"><span class="err" role="alert"></span>
+          </div>
+          <div class="fd">
+            <label for="ln">Last name</label>
+            <input id="ln" type="text" data-v="name" autocomplete="family-name"><span class="err" role="alert"></span>
+          </div>
+          <div class="fd">
+            <label for="e">Email</label>
+            <input id="e" type="email" data-v="email" autocomplete="email"><span class="err" role="alert"></span>
+          </div>
+          <div class="fd">
+            <label for="p">Password</label>
+            <input id="p" type="password" data-v="pass" autocomplete="new-password">
+            <button type="button" class="eye" aria-label="Show password">👁</button>
+            <span class="err" role="alert"></span>
+          </div>
+          <div class="fd">
+            <label for="c">Confirm password</label>
+            <input id="c" type="password" data-v="confirm" autocomplete="new-password">
+            <button type="button" class="eye" aria-label="Show password">👁</button>
+            <span class="err" role="alert"></span>
+          </div>
+          <div class="fd">
+            <label><input type="checkbox" data-v="terms"> I accept the <a href="terms.html" style="color:var(--blue)">Terms &amp; Conditions</a></label>
+            <span class="err" role="alert"></span>
+          </div>
+          <button class="btn" style="width:100%" type="submit">Create account</button>
+          <p class="up success" hidden style="margin-top:1rem"></p>
+          <p style="margin-top:1.4rem;color:var(--mute)">Already have an account? <a href="login.html" style="color:var(--blue);font-weight:700">Log in</a></p>
+        </form>
+      </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/text.js"></script><script src="js/motion.js"></script><script src="js/cards.js"></script><script src="js/textfx.js"></script>
+  </body>
+</html>

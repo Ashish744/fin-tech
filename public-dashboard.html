@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<script>try{var p=location.pathname.split('/').pop();if(sessionStorage.getItem('pt')&&p!==''&&p!=='index.html'&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-in');sessionStorage.removeItem('pt')}catch(e){}</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My Dashboard — Fintech Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/motion.css">
+    <link rel="stylesheet" href="css/pages.css">
+  </head>
+  <body class="dash pub" data-dash="public">
+    <main class="dmain">
+      <section class="dashboard-view" data-view="overview">
+      <h1>Good morning, <span data-profile-greeting>Sam</span></h1>
+      <div class="row">
+        <div class="cd hero-b">
+          <small>Account balance</small>
+          <div class="v" style="font-size:2.6rem">$<span class="cnt" data-to="24680">0</span></div>
+          <small>Available across 2 accounts</small><br><a class="btn" href="#">Make a payment</a>
+        </div>
+        <div class="cd">
+          <b>Spending by category</b>
+          <div class="dn" role="img" aria-label="Donut chart of spending"></div>
+          <small>45% rent · 25% food · 30% other</small>
+        </div>
+      </div>
+      <div class="kp">
+        <div class="cd">
+          <small>Income</small>
+          <div class="v">$<span class="cnt" data-to="5200">0</span></div>
+          <span class="up">+4%</span>
+        </div>
+        <div class="cd">
+          <small>Spending</small>
+          <div class="v">$<span class="cnt" data-to="3140">0</span></div>
+        </div>
+        <div class="cd">
+          <small>Savings</small>
+          <div class="v">$<span class="cnt" data-to="2060">0</span></div>
+          <span class="up">+11%</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cd">
+          <b>Monthly spending</b>
+          <div class="bars" data-b="55,48,62,45,70,52,58,40,66,50,44,60"></div>
+        </div>
+        <div class="cd">
+          <b>Goals</b>
+          <p style="margin-top:.8rem">New laptop · 78%</p>
+          <div class="bar"><i data-w="78"></i></div>
+          <p>Holiday fund · 45%</p>
+          <div class="bar"><i data-w="45"></i></div>
+          <p>Emergency fund · 62%</p>
+          <div class="bar"><i data-w="62"></i></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cd">
+          <b>Recent transactions</b>
+          <div class="tw">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Oct 3</td>
+                  <td>Salary</td>
+                  <td class="up">+$5,200</td>
+                </tr>
+                <tr>
+                  <td>Oct 2</td>
+                  <td>Grocery Mart</td>
+                  <td>-$86</td>
+                </tr>
+                <tr>
+                  <td>Oct 1</td>
+                  <td>Rent</td>
+                  <td>-$1,400</td>
+                </tr>
+                <tr>
+                  <td>Sep 30</td>
+                  <td>Metro pass</td>
+                  <td>-$45</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="cd xd">
+          <b>Investments</b>
+          <div class="v">$<span class="cnt" data-to="12450">0</span></div>
+          <span class="up">+6.8% this year</span><svg class="ln" data-l="20,26,24,32,30,40,46,52"></svg>
+          <div class="more">
+            <p class="lead">60% index funds, 30% bonds, 10% cash.</p>
+          </div>
+          <small>Click for allocation</small>
+        </div>
+      </div>
+      </section>
+      <section class="dashboard-view" data-view="account" hidden>
+        <h1>My Account</h1>
+        <p class="lead account-intro">Your profile, connected accounts, and security settings at a glance.</p>
+        <div class="account-summary">
+          <article class="cd"><small>Total balance</small><strong>$24,680.00</strong><span>Across 2 linked accounts</span></article>
+          <article class="cd"><small>Income this month</small><strong class="up">$5,200.00</strong><span>Next deposit: Oct 15</span></article>
+          <article class="cd"><small>Spending this month</small><strong>$3,140.40</strong><span>Across 24 transactions</span></article>
+        </div>
+        <div class="account-grid">
+          <article class="cd account-profile">
+            <div class="account-avatar" aria-hidden="true">SK</div>
+            <div>
+              <h2 data-profile-name>Sam K.</h2>
+              <p>Personal account</p>
+              <span class="account-status">Active</span>
+            </div>
+          </article>
+          <article class="cd">
+            <h2>Personal details</h2>
+            <dl class="account-details">
+              <div><dt>Email</dt><dd data-profile-email>sam@example.com</dd></div>
+              <div><dt>Phone</dt><dd>+1 (•••) •••-0184</dd></div>
+              <div><dt>Member since</dt><dd>2022</dd></div>
+              <div><dt>Account type</dt><dd>Personal</dd></div>
+              <div><dt>Preferred currency</dt><dd>USD ($)</dd></div>
+            </dl>
+          </article>
+          <article class="cd account-wide">
+            <h2>Connected accounts</h2>
+            <div class="linked-accounts">
+              <div><span class="account-icon" aria-hidden="true">C</span><span><b>Checking account</b><small>•••• 4821</small></span><strong>$18,420</strong></div>
+              <div><span class="account-icon savings-icon" aria-hidden="true">S</span><span><b>Savings account</b><small>•••• 9076</small></span><strong>$6,260</strong></div>
+            </div>
+          </article>
+          <article class="cd account-wide">
+            <h2>Payment methods</h2>
+            <div class="linked-accounts">
+              <div><span class="account-icon card-icon" aria-hidden="true">V</span><span><b>Visa debit card</b><small>•••• 4821 · Expires 08/28 · Default</small></span><span class="account-status">Active</span></div>
+            </div>
+          </article>
+          <article class="cd">
+            <h2>Security</h2>
+            <p class="account-security">Two-factor authentication <strong>Enabled</strong></p>
+            <p class="account-security">Biometric sign-in <strong>Enabled</strong></p>
+            <p class="account-security">Last sign-in <strong>Today, 9:42 AM</strong></p>
+          </article>
+        </div>
+      </section>
+      <section class="dashboard-view" data-view="transactions" hidden>
+        <h1>Transactions</h1>
+        <p class="lead transactions-intro">Review recent activity across your connected accounts.</p>
+        <div class="transaction-summary">
+          <article class="cd"><small>Money in</small><strong class="up">+$5,858.42</strong><span>Across the 3 deposits shown</span></article>
+          <article class="cd"><small>Money out</small><strong>−$1,759.06</strong><span>Across the 7 payments shown</span></article>
+          <article class="cd"><small>Completed</small><strong>10</strong><span>Transactions shown</span></article>
+        </div>
+        <article class="cd transactions-card">
+          <h2>Recent activity</h2>
+          <p class="lead">Your latest account activity.</p>
+          <div class="tw">
+            <table class="transactions-table">
+              <thead>
+                <tr><th>Date</th><th>Description</th><th>Amount</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td data-label="Date">Oct 3</td><td data-label="Description">Salary</td><td data-label="Amount" class="up">+$5,200</td><td data-label="Status">Completed</td></tr>
+                <tr><td data-label="Date">Oct 2</td><td data-label="Description">Grocery Mart</td><td data-label="Amount">−$86.40</td><td data-label="Status">Completed</td></tr>
+                <tr><td data-label="Date">Oct 1</td><td data-label="Description">Monthly rent</td><td data-label="Amount">−$1,400</td><td data-label="Status">Completed</td></tr>
+                <tr><td data-label="Date">Sep 30</td><td data-label="Description">Metro pass</td><td data-label="Amount">−$45.00</td><td data-label="Status">Completed</td></tr>
+                <tr><td data-label="Date">Sep 28</td><td data-label="Description">Savings interest</td><td data-label="Amount" class="up">+$18.42</td><td data-label="Status">Completed</td></tr>
+                <tr><td data-label="Date">Sep 25</td><td data-label="Description">Online purchase</td><td data-label="Amount">−$129.99</td><td data-label="Status">Completed</td></tr>
+                <tr><td data-label="Date">Sep 23</td><td data-label="Description">Electric utility</td><td data-label="Amount">−$74.18</td><td data-label="Status">Completed</td></tr>
+                <tr><td data-label="Date">Sep 20</td><td data-label="Description">Coffee House</td><td data-label="Amount">−$8.50</td><td data-label="Status">Completed</td></tr>
+                <tr><td data-label="Date">Sep 18</td><td data-label="Description">Freelance payment</td><td data-label="Amount" class="up">+$640.00</td><td data-label="Status">Completed</td></tr>
+                <tr><td data-label="Date">Sep 16</td><td data-label="Description">Streaming subscription</td><td data-label="Amount">−$14.99</td><td data-label="Status">Completed</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

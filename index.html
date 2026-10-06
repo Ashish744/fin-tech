@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<script>try{var p=location.pathname.split('/').pop();if(sessionStorage.getItem('pt')&&p!==''&&p!=='index.html'&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-in');sessionStorage.removeItem('pt')}catch(e){}</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Fintech Platform — Move Your Money Smarter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/motion.css">
+    <link rel="stylesheet" href="css/pages.css">
+  </head>
+  <body data-page="home">
+    <div id="prog"></div>
+    <div class="pl" id="loader" aria-hidden="true">
+  <div class="pl-grid">
+    <div class="tile w t1"><small>Revenue</small><div class="bars-m"><i style="--h:35%"></i><i style="--h:55%"></i><i style="--h:45%"></i><i style="--h:75%"></i><i style="--h:95%;background:var(--green)"></i></div></div>
+    <div class="tile bl t2"><small>Goal</small><div class="ring"><svg viewBox="0 0 100 100"><circle class="tr" cx="50" cy="50" r="42"/><circle class="rg" cx="50" cy="50" r="42"/></svg><b>0%</b></div></div>
+    <div class="tile nv t3"><small>Growth</small><svg class="spark" viewBox="0 0 100 40"><path d="M2 34 L22 26 L40 30 L60 14 L80 18 L98 4"/></svg></div>
+    <div class="tile tq t4"><small>Cards</small><div class="cc"></div></div>
+    <div class="tile w t5"><small>Savings</small><div class="coin">$</div></div>
+    <div class="tile gr t6"><small>Balance</small><b id="bal">$0</b></div>
+    <div class="tile bl t7"><small>Sync</small><div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <div class="tile w t8"><small>Budgets</small><div class="rows"><i></i><i></i><i></i></div></div>
+    <div class="core"><img src="assets/logo/logo.webp" alt="" width="173" height="50"><div class="num"><span id="pct">0</span><sup>%</sup></div><div class="pbar"><i id="pbar"></i></div><p id="pmsg">Connecting your accounts</p></div>
+  </div>
+</div>
+    <nav id="nav">
+      <div class="wrap nb">
+        <a class="logo" href="index.html"><img src="assets/logo/logo.webp" alt="Stackly" width="173" height="50"></a>
+        <button id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+        <div class="links" id="links">
+          <div class="mid"><a class="on" href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div><a class="btn mag" href="login.html">Login</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <header class="hero2">
+        <span class="blob b1"></span><span class="blob b2"></span>
+        <div class="wrap hg">
+          <div class="hl">
+            <p class="chip rv">Trusted by 2.4 million people</p>
+            <h1>Move your money smarter.</h1>
+            <p class="lead rv">One calm workspace for your <span id="tw" class="tw">payments</span>, with live insight into every transaction.</p>
+            <div class="ct rv">
+              <a class="btn mag" href="create-account.html">Get started</a><a class="btn ghost mag" href="public-dashboard.html">View dashboard</a>
+            </div>
+            <div class="hstats rv">
+              <div>
+                <b><span class="cnt" data-to="2400000">0</span></b><small>Active users</small>
+              </div>
+              <div>
+                <b>$<span class="cnt" data-to="18">0</span>B</b><small>Processed yearly</small>
+              </div>
+              <div><b><span class="cnt" data-to="99">0</span>.99%</b><small>Uptime</small></div>
+            </div>
+          </div>
+          <div class="hr" id="stage">
+            <div class="img p1">
+              <img src="assets/images/home5.webp" alt="Contactless payment terminal">
+            </div>
+            <div class="img p2">
+              <img src="assets/images/home1.webp" alt="Financial data visualized across a connected network">
+            </div>
+            <div class="fc a" data-d="20">
+              <small>Total balance</small><b>$<span class="cnt" data-to="84250">0</span></b> <span class="up">+12.4%</span><svg viewBox="0 0 200 60"><path id="ch" d="M0 50 C30 45 40 20 70 30 S110 55 140 25 S180 10 200 5"/></svg>
+            </div>
+            <div class="fc b" data-d="40">
+              <small>Payment received</small><b>+$2,400</b><small>Northwind Ltd · just now</small>
+            </div>
+            <div class="fc c" data-d="60"><small>Savings goal</small><b>78%</b></div>
+          </div>
+        </div>
+      </header>
+      <section class="alt">
+        <div class="wrap">
+          <h2>How your money moves</h2>
+          <div class="tl" id="tl">
+            <div id="tlp"></div>
+            <div class="st">
+              <h3>Connect</h3>
+              <p class="lead">Link accounts in minutes with bank-grade encryption.</p>
+            </div>
+            <div class="st">
+              <h3>Categorize</h3>
+              <p class="lead">Every transaction is sorted automatically as it arrives.</p>
+            </div>
+            <div class="st">
+              <h3>Plan</h3>
+              <p class="lead">Set budgets and goals, and see how today's spending affects them.</p>
+            </div>
+            <div class="st">
+              <h3>Grow</h3>
+              <p class="lead">Move surplus into investments with one tap.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hs" id="hs">
+        <div class="pin">
+          <div class="track" id="track">
+            <h2>Everything money does, in one place.</h2>
+            <div class="hc">
+              <h3>Payments</h3>
+              <p>Send and receive in seconds.</p>
+            </div>
+            <div class="hc">
+              <h3>Investments</h3>
+              <p>Track every holding live.</p>
+            </div>
+            <div class="hc">
+              <h3>Budgeting</h3>
+              <p>Limits that adjust to you.</p>
+            </div>
+            <div class="hc">
+              <h3>Analytics</h3>
+              <p>Trends you can act on.</p>
+            </div>
+            <div class="hc">
+              <h3>Security</h3>
+              <p>Biometric and 2-factor by default.</p>
+            </div>
+            <div class="hc">
+              <h3>Planning</h3>
+              <p>Forecast your next five years.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="spot" id="spot">
+        <div class="wrap">
+          <h2>Tools that work for you</h2>
+          <p class="lead">Hover or tap a card to see what it does.</p>
+          <div class="flips">
+            <div class="flip" tabindex="0">
+              <div class="fi">
+                <div class="fr">Smart payments</div>
+                <div class="bk">
+                  <b>Pay in one tap</b>
+                  <p>Schedule, split and automate bills.</p>
+                  <a class="btn" style="background:#fff;color:var(--blue);margin-top:1rem" href="services.html">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <div class="flip" tabindex="0">
+              <div class="fi">
+                <div class="fr">Expense tracking</div>
+                <div class="bk">
+                  <b>See where it goes</b>
+                  <p>Auto-categories and monthly reports.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip" tabindex="0">
+              <div class="fi">
+                <div class="fr">Fraud protection</div>
+                <div class="bk">
+                  <b>Always watching</b>
+                  <p>Instant alerts on unusual activity.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flip" tabindex="0">
+              <div class="fi">
+                <div class="fr">Financial goals</div>
+                <div class="bk">
+                  <b>Save with purpose</b>
+                  <p>Progress bars that keep you on track.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrap">
+          <h2>See it in action</h2>
+          <div class="g3">
+            <article class="rc" tabindex="0">
+              <div class="img">
+                <img src="assets/images/home5.webp" loading="lazy" alt="Contactless payment terminal">
+              </div>
+              <div class="t">
+                <h3>Pay anywhere</h3>
+                <p>Tap, send or schedule in seconds.</p>
+              </div>
+            </article>
+            <article class="rc" tabindex="0">
+              <div class="img">
+                <img src="assets/images/home2.webp" loading="lazy" alt="Financial charts displayed on a tablet">
+              </div>
+              <div class="t">
+                <h3>Understand your money</h3>
+                <p>Live charts that update as you spend.</p>
+              </div>
+            </article>
+            <article class="rc" tabindex="0">
+              <div class="img">
+                <img src="assets/images/home4.webp" loading="lazy" alt="Wall Street sign">
+              </div>
+              <div class="t">
+                <h3>Grow your savings</h3>
+                <p>Track investments next to your budget.</p>
+              </div>
+            </article>
+            <article class="rc" tabindex="0">
+              <div class="img">
+                <img src="assets/images/home7.webp" loading="lazy" alt="Modern office building">
+              </div>
+              <div class="t">
+                <h3>Technology at every step</h3>
+                <p>Fast, connected tools make managing money feel effortless.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="alt" style="padding:3rem 0">
+        <div class="mq">
+          <div class="mt">
+            <span>Secure payments</span><span>Smart analytics</span><span>Wealth insights</span><span>Digital banking</span><span>Secure payments</span><span>Smart analytics</span><span>Wealth insights</span><span>Digital banking</span>
+          </div>
+        </div>
+        <div class="mq r">
+          <div class="mt">
+            <span>Expense management</span><span>Financial planning</span><span>Secure transactions</span><span>Expense management</span><span>Financial planning</span><span>Secure transactions</span>
+          </div>
+        </div>
+      </section>
+      <div class="wrap">
+        <div class="cta">
+          <h2>Build a smarter financial future.</h2>
+          <p style="opacity:.8;margin-top:1rem">Open your account in under three minutes.</p>
+          <a class="btn mag" href="create-account.html">Create account</a>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/loader.js"></script><script src="js/animations.js"></script>
+  </body>
+</html>

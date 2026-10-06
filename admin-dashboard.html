@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<script>try{var p=location.pathname.split('/').pop();if(sessionStorage.getItem('pt')&&p!==''&&p!=='index.html'&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('pt-in');sessionStorage.removeItem('pt')}catch(e){}</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admin Dashboard — Fintech Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/motion.css">
+    <link rel="stylesheet" href="css/pages.css">
+  </head>
+  <body class="dash adm" data-dash="admin">
+    <main class="dmain">
+      <section class="dashboard-view" data-view="overview">
+      <h1>Overview</h1>
+      <div class="kp">
+        <div class="cd">
+          <small>Revenue</small>
+          <div class="v">$<span class="cnt" data-to="1284500">0</span></div>
+          <span class="up">+8.2%</span>
+        </div>
+        <div class="cd">
+          <small>Total users</small>
+          <div class="v"><span class="cnt" data-to="2412880">0</span></div>
+          <span class="up">+3.1%</span>
+        </div>
+        <div class="cd">
+          <small>Transactions today</small>
+          <div class="v"><span class="cnt" data-to="48210">0</span></div>
+          <span class="up">+5.6%</span>
+        </div>
+        <div class="cd">
+          <small>Active accounts</small>
+          <div class="v"><span class="cnt" data-to="1894300">0</span></div>
+          <span class="up">+2.4%</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cd">
+          <b>Revenue by month</b>
+          <div class="bars" data-b="45,52,48,60,66,58,72,80,76,88,92,96"></div>
+        </div>
+        <div class="cd">
+          <b>Account types</b>
+          <div class="dn" role="img" aria-label="Donut chart: 45% personal, 25% business, 30% savings">
+          </div>
+          <small>45% personal · 25% business · 30% savings</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cd">
+          <b>Recent transactions</b>
+          <div class="tw">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>User</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#48210</td>
+                  <td>Northwind Ltd</td>
+                  <td>$2,400</td>
+                  <td class="up">Completed</td>
+                </tr>
+                <tr>
+                  <td>#48209</td>
+                  <td>Priya Nair</td>
+                  <td>$180</td>
+                  <td class="up">Completed</td>
+                </tr>
+                <tr>
+                  <td>#48208</td>
+                  <td>Alan Brooks</td>
+                  <td>$9,750</td>
+                  <td style="color:#c77d00">Review</td>
+                </tr>
+                <tr>
+                  <td>#48207</td>
+                  <td>Zen Cafe</td>
+                  <td>$64</td>
+                  <td class="up">Completed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="cd">
+          <b>Notifications</b>
+          <p style="margin:.8rem 0"><small>Large transfer flagged for review</small></p>
+          <p style="margin-bottom:.8rem"><small>Monthly report is ready</small></p>
+          <p><small>3 new support tickets</small></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cd">
+          <b>Performance trend</b><svg class="ln" data-l="30,42,38,55,50,68,74,70,90"></svg>
+        </div>
+        <div class="cd xd">
+          <b>User activity</b>
+          <p class="lead">Peak hour: 6pm</p>
+          <div class="more">
+            <p class="lead">Mobile sessions are 71% of traffic. Average session length is 6m 40s.</p>
+          </div>
+          <small>Click to expand</small>
+        </div>
+      </div>
+      <div class="cd">
+        <b>Quick actions</b>
+        <p style="margin-top:.8rem;display:flex;gap:.6rem;flex-wrap:wrap"><a class="btn" href="#">Add user</a><a class="btn ghost" href="#">Export report</a><a class="btn ghost" href="#">Review flags</a></p>
+      </div>
+      </section>
+      <section class="dashboard-view" data-view="users" hidden>
+        <h1>Users</h1>
+        <p class="lead account-intro">Monitor customer accounts and their current status.</p>
+        <div class="account-summary">
+          <article class="cd"><small>Total users</small><strong>2,412,880</strong><span>All registered accounts</span></article>
+          <article class="cd"><small>Active users</small><strong class="up">1,894,300</strong><span>78.5% of all users</span></article>
+          <article class="cd"><small>Needs review</small><strong>12</strong><span>Pending account checks</span></article>
+        </div>
+        <article class="cd transactions-card">
+          <h2>Recent users</h2>
+          <p class="lead">Recently created and reviewed customer accounts.</p>
+          <div class="tw">
+            <table class="transactions-table">
+              <thead>
+                <tr><th>User</th><th>Account type</th><th>Joined</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td data-label="User">Priya Nair</td><td data-label="Account type">Personal</td><td data-label="Joined">Oct 5, 2026</td><td data-label="Status" class="up">Active</td></tr>
+                <tr><td data-label="User">Northwind Ltd</td><td data-label="Account type">Business</td><td data-label="Joined">Oct 4, 2026</td><td data-label="Status" class="up">Active</td></tr>
+                <tr><td data-label="User">Alan Brooks</td><td data-label="Account type">Personal</td><td data-label="Joined">Oct 4, 2026</td><td data-label="Status" class="review-status">Review</td></tr>
+                <tr><td data-label="User">Zen Cafe</td><td data-label="Account type">Business</td><td data-label="Joined">Oct 3, 2026</td><td data-label="Status" class="up">Active</td></tr>
+                <tr><td data-label="User">Maya Patel</td><td data-label="Account type">Personal</td><td data-label="Joined">Oct 2, 2026</td><td data-label="Status" class="up">Active</td></tr>
+                <tr><td data-label="User">Brightline Studio</td><td data-label="Account type">Business</td><td data-label="Joined">Oct 1, 2026</td><td data-label="Status" class="review-status">Review</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+      <section class="dashboard-view" data-view="transactions" hidden>
+        <h1>Transactions</h1>
+        <p class="lead transactions-intro">Track platform payments and transactions that need attention.</p>
+        <div class="transaction-summary">
+          <article class="cd"><small>Processed today</small><strong>$1,284,500</strong><span>Across 48,210 transactions</span></article>
+          <article class="cd"><small>Completed</small><strong class="up">47,862</strong><span>99.3% completion rate</span></article>
+          <article class="cd"><small>Under review</small><strong>348</strong><span>Requires attention</span></article>
+        </div>
+        <article class="cd transactions-card">
+          <h2>Recent transactions</h2>
+          <p class="lead">Latest payment activity across customer accounts.</p>
+          <div class="tw">
+            <table class="transactions-table">
+              <thead>
+                <tr><th>ID</th><th>User</th><th>Amount</th><th>Date</th><th>Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td data-label="ID">#48210</td><td data-label="User">Northwind Ltd</td><td data-label="Amount">$2,400.00</td><td data-label="Date">Oct 6, 2026</td><td data-label="Status" class="up">Completed</td></tr>
+                <tr><td data-label="ID">#48209</td><td data-label="User">Priya Nair</td><td data-label="Amount">$180.00</td><td data-label="Date">Oct 6, 2026</td><td data-label="Status" class="up">Completed</td></tr>
+                <tr><td data-label="ID">#48208</td><td data-label="User">Alan Brooks</td><td data-label="Amount">$9,750.00</td><td data-label="Date">Oct 6, 2026</td><td data-label="Status" class="review-status">Review</td></tr>
+                <tr><td data-label="ID">#48207</td><td data-label="User">Zen Cafe</td><td data-label="Amount">$64.00</td><td data-label="Date">Oct 6, 2026</td><td data-label="Status" class="up">Completed</td></tr>
+                <tr><td data-label="ID">#48206</td><td data-label="User">Maya Patel</td><td data-label="Amount">$325.50</td><td data-label="Date">Oct 6, 2026</td><td data-label="Status" class="up">Completed</td></tr>
+                <tr><td data-label="ID">#48205</td><td data-label="User">Brightline Studio</td><td data-label="Amount">$4,200.00</td><td data-label="Date">Oct 5, 2026</td><td data-label="Status" class="review-status">Review</td></tr>
+                <tr><td data-label="ID">#48204</td><td data-label="User">Asha Verma</td><td data-label="Amount">$92.75</td><td data-label="Date">Oct 5, 2026</td><td data-label="Status" class="up">Completed</td></tr>
+                <tr><td data-label="ID">#48203</td><td data-label="User">Green Leaf Market</td><td data-label="Amount">$710.00</td><td data-label="Date">Oct 5, 2026</td><td data-label="Status" class="up">Completed</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
